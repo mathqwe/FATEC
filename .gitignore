@@ -1,0 +1,4 @@
+# ignorando executáveis
+*/a.out
+*/*.out
+*/*.exe3
