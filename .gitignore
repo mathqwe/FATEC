@@ -1,4 +1,4 @@
-# ignorando executáveis
-*/a.out
+# Ignorando executáveis
+*/main.out
 */*.out
-*/*.exe3
+*/*.exe
