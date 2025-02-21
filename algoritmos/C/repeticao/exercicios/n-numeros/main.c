@@ -1,14 +1,6 @@
 /*
   Esse programa deve ler um inteiro positivo n. Em seguida, deve ler n números do teclado 
   e apresentar a soma de todos eles.
-  
-  **Considerações sobre a função scanf();**
-
-    - Cada argumento é um ponteiro para um variável com um tipo que corresponde a um 
-    especificador de tipo format-string. Esse format string controla a interpretação
-    dos campos de entrada. %d, %i, %lld, %f, %ld, %lf, %llf, %s, %u, %uf;
-    - 
-
 */
 
 #include <stdio.h>
@@ -18,7 +10,7 @@
 int main (void) {
   int n = 0;
   int inputNum;
-  int somaTotal = 0;
+  int somaTotal = 0; //variável acumuladora
 
   printf("Digite um número inteiro positivo: ");
 
