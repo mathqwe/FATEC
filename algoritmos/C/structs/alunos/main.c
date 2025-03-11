@@ -16,18 +16,49 @@ typedef struct Aluno {
 void lerAlunos (Aluno z[], int tam) {
 	for (int i = 0; i < tam; i++) {
 		printf("Digite o RA: ");
-		scanf("%d", &z[i].RA);
+
+		while(scanf("%d", &z[i].RA) != 1){
+			printf("RA, digite novamente!\n");
+			while(getchar() != '\n');
+		}
 
 		printf("Digite a Idade: ");
-		scanf("%d", &z[i].idade);
+
+		while(scanf("%d", &z[i].idade) != 1) {
+			printf("Idade inválida, digite novamente: ");
+			while(getchar() != '\n');
+		} 
 	}
+}
+
+void listagemAlunos (Aluno z[], int tam) {
+	for (int i = 0; i < tam; i++) {
+		printf("Indice[%d] RA = %d | Idade = %d\n", i, z[i].RA, z[i].idade);
+	}
+}
+
+float mediaIdades (Aluno z[], int tam) {
+	float media = 0;
+
+	for(int i = 0; i < tam; i++) {
+		media += z[i].idade;//acumuladora
+	}
+
+	media /= tam;// media = media / tam;
+	return media;
 }
 
 int main (void) {
 	Aluno listaAlunos [5];	
 	
-	printf("Digite a seguir a informação de 5 alunos: ");
-
+	printf("Digite a seguir a informação de 5 alunos: \n\n");
 	lerAlunos(listaAlunos, 5);
+	
+	//testes
+	printf("\nLista inserida de alunos: \n");
+	listagemAlunos(listaAlunos, 5);
+
+	printf("\nmedia de idade dos alunos: \n");
+	printf("Media = %.1f\n\n\n", mediaIdades(listaAlunos, 5));
 	return 0;
 }
