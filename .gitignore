@@ -1,0 +1,87 @@
+########################
+# C / C++ build files  #
+########################
+*.o
+*.obj
+*.so
+*.a
+*.out
+*.exe
+*.dll
+*.dylib
+a.out
+
+# Diretórios comuns de build
+/build/
+/bin/
+/debug/
+/release/
+/dist/
+/out/
+
+########################
+# Java build files     #
+########################
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+replay_pid*
+
+# Diretórios de compilação comuns do Java
+/.idea/
+/target/
+/.gradle/
+/.mvn/
+/.settings/
+/.classpath
+/.project
+
+########################
+# Sistemas operacionais
+########################
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+########################
+# IDEs e editores
+########################
+# VSCode
+.vscode/
+
+# JetBrains (IntelliJ, CLion, PyCharm, etc.)
+.idea/
+
+# Eclipse
+*.launch
+.settings/
+
+# Vim / Emacs
+*~
+*.swp
+*.swo
+
+########################
+# Outros
+########################
+# Logs
+*.log
+*.tmp
+*.temp
+
+# Arquivos de backup
+*.bak
+*.old
+*.orig
