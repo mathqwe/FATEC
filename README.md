@@ -5,9 +5,9 @@
 
 **Repository Structure**
 📂 FATEC 
-│── 📂 algoritmos (Algorithms and Logic) 
-│── 📂 estrutura-de-dados (Data Structures)  
-│── 📂 banco-de-dados (Databases)  
+│── 📂 c(Algorithms and Logic) 
+│── 📂 java
+│── 📂 python 
 │── 📂 redes-computadores (Computer Networks)  
 │── 📂 engenharia-de-software (Software Engineering)  
 │── 📂 sistemas-operacionais (Operational Systems)
